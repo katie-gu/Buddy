@@ -6,4 +6,4 @@ def home(request):
     return render(request, 'game/home.html')
 
 def profile(request):
-    return render(request, 'game/profile.html')
+    return render(request, "game/profile.html")

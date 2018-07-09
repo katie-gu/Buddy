@@ -19,3 +19,9 @@ class Choice(models.Model):
 
     def was_published_recently(self):
         return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+
+class Challenge(modles.Model):
+    description = models.CharField(max_length=10000)
+
+    def __str__(self):
+        return self.description

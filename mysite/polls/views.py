@@ -3,7 +3,7 @@ from django.template import loader
 from django.urls import reverse
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
-from .models import Question, Choice
+from .models import Question, Choice, Challenge
 
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'

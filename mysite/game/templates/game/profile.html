@@ -2,22 +2,28 @@
 <html>
 <head>
     <title>Buddy</title>
-    <link rel="stylesheet" type="text/css" href="../../static/game/profile.css">
+    <link rel="stylesheet" type="text/css" href="/static/game/profile.css">
 </head>
 
 <body>
 
-<script src="../../static/game/profile.js"></script>
+<div id="todo">
+    <div id="myDIV" class="header">
+     <h2>Daily Challenges</h2>
+     <input type="text" id="myInput" placeholder="Title...">
+     <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
 
-
-<div id="myDIV" class="header">
- <h2>My To Do List</h2>
- <input type="text" id="myInput" placeholder="Title...">
- <span onclick="newElement()" class="addBtn">Add</span>
+    <ul id="myUL">
+      <li>Hit the gym</li>
+      <li class="checked">Pay bills</li>
+      <li>Meet George</li>
+      <li>Buy eggs</li>
+      <li>Read a book</li>
+      <li>Organize office</li>
+    </ul>
 </div>
 
-<ul id="myUL">
-</ul>
-
+<script src="/static/game/profile.js"></script>
 </body>
 </html>

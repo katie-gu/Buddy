@@ -56,6 +56,10 @@ ul li.checked::before {
     width: 7px;
 }
 
+#todo {
+    padding: 50px 950px 0 0;
+}
+
 /* Style the close button */
 .close {
     position: absolute;
@@ -71,7 +75,7 @@ ul li.checked::before {
 
 /* Style the header */
 .header {
-    background-color: #f44336;
+    background-color: #9999ff;
     padding: 30px 40px;
     color: white;
     text-align: center;

@@ -57,7 +57,11 @@ ul li.checked::before {
 }
 
 #todo {
-    padding: 50px 950px 0 0;
+    padding: 0px 950px 0 0;
+}
+
+#level {
+    font-size: 25px;
 }
 
 /* Style the close button */
@@ -74,7 +78,7 @@ ul li.checked::before {
 }
 
 /* Style the header */
-.header {
+#myDIV {
     background-color: #9999ff;
     padding: 30px 40px;
     color: white;
@@ -82,7 +86,7 @@ ul li.checked::before {
 }
 
 /* Clear floats after the header */
-.header:after {
+#myDIV:after {
     content: "";
     display: table;
     clear: both;
@@ -115,4 +119,18 @@ input {
 
 .addBtn:hover {
     background-color: #bbb;
+}
+
+.bar {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+}
+
+.xp {
+    text-align: right; /* Right-align text */
+    padding-right: 20px; /* Add some right padding */
+    line-height: 40px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
+    color: white; /* White text color */
+    width: 40%;
+    background-color: #4CAF50; /*green*/
 }

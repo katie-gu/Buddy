@@ -1,3 +1,15 @@
+var challenges = ["Go outside of the house and do three pushups.",
+"High five a stranger.",
+"Get up from your desk and do 10 situps"];
+
+var i;
+for (i = 0; i < challenges.length; i++) {
+    var li = document.createElement("li");
+    var t = document.createTextNode(challenges[i]);
+    li.appendChild(t);
+    document.getElementById("myUL").appendChild(li);
+}
+
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
@@ -24,6 +36,8 @@ var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
+
+    
   }
 }, false);
 
@@ -52,4 +66,9 @@ function newElement() {
       div.style.display = "none";
     }
   }
+}
+
+function completeChallenge(challenge) {
+    var elem = document.getElementsByClassName("xp")[0].style.width = "70%";
+    console.log(elem);
 }

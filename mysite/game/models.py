@@ -11,11 +11,13 @@ class Challenge(models.Model):
     def __str__(self):
         return self.description
 
-class AppUser(models.Model):
-    name = models.CharField(max_length=200, default="")
+class appUser(models.Model):
+    username = models.CharField(max_length=200, default= "")
+    nickname = models.CharField(max_length=200, default="")
     email = models.CharField(max_length=200, default="")
     password = models.CharField(max_length=200, default="")
-    challenges_completed = models.ManyToManyField(Challenge)
+    level = models.IntegerField(default=1)
+    xp = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.name
+        return self.username

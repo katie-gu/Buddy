@@ -8,9 +8,9 @@
 <body>
 
 <div id="todo">
-    <div id="level">Level 1</div>
+    <div id="level">{{eric.nickname}}: Level {{eric.level}}</div>
     <div class="bar">
-      <div class="xp">32389713283%</div>
+      <div class="xp">{{eric.xp}}</div>
     </div>
 
     <p> </p>
@@ -18,7 +18,7 @@
     <div id="myDIV">
      <h2>Daily Challenges</h2>
      <input type="text" id="myInput" placeholder="Title...">
-     <span onclick="newElement()" class="addBtn">Add</span>
+     <span onclick="newElement()" class="addBtn">Generate</span>
     </div>
 
     <ul id="myUL">
@@ -27,6 +27,15 @@
       </li>
       <li>
         {{challenge2.description}}
+      </li>
+      <li>
+        {{challenge3.description}}
+      </li>
+      <li>
+        {{challenge4.description}}
+      </li>
+      <li>
+        {{challenge5.description}}
       </li>
     </ul>
 </div>

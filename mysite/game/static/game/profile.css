@@ -17,6 +17,7 @@ ul li {
     background: #eee;
     font-size: 18px;
     transition: 0.2s;
+    list-style-type: none;
 
     /* make the list items unselectable */
     -webkit-user-select: none;
@@ -57,7 +58,8 @@ ul li.checked::before {
 }
 
 #todo {
-    padding: 0px 950px 0 0;
+    padding: 0 450px 0 450px;
+    position: center;
 }
 
 #level {
@@ -131,6 +133,6 @@ input {
     padding-right: 20px; /* Add some right padding */
     line-height: 40px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
     color: white; /* White text color */
-    width: 40%;
+    width: 0%;
     background-color: #4CAF50; /*green*/
 }

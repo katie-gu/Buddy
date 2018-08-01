@@ -1,15 +1,3 @@
-var challenges = ["Go outside of the house and do three pushups.",
-"High five a stranger.",
-"Get up from your desk and do 10 situps"];
-
-var i;
-for (i = 0; i < challenges.length; i++) {
-    var li = document.createElement("li");
-    var t = document.createTextNode(challenges[i]);
-    li.appendChild(t);
-    document.getElementById("myUL").appendChild(li);
-}
-
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
@@ -21,6 +9,9 @@ for (i = 0; i < myNodelist.length; i++) {
   myNodelist[i].appendChild(span);
 }
 
+var xp = document.getElementsByClassName("xp");
+
+var percent = "0%";
 // Click on a close button to hide the current list item
 var close = document.getElementsByClassName("close");
 var i;
@@ -28,6 +19,12 @@ for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     var div = this.parentElement;
     div.style.display = "none";
+    // increment xp
+    var x = document.getElementsByClassName("xp");
+    percent = parseInt(percent);
+    percent += 50;
+    x[0].style.width = percent + "%";
+    percent = percent + "%";
   }
 }
 
@@ -64,9 +61,4 @@ function newElement() {
       div.style.display = "none";
     }
   }
-}
-
-function completeChallenge(challenge) {
-    var elem = document.getElementsByClassName("xp")[0].style.width = "70%";
-    console.log(elem);
 }

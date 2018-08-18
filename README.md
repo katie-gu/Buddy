@@ -1,2 +1,1 @@
-# Buddy
-An chatbot where students can talk to for advice on a variety of mental health issues, such as stress management, depression, and anxiety.  Built using PostGreSQL for the database, Django for the MVC framework, React.js for the front-end, and Apache Open NLP for the natural language processing. 
+A full-stack web application using Django for students to track their progress on completing physical and mental health goals. Uses PostGreSQL database models for storing user data. User interface for users to vote for submissions on health challenges using React.js, HTML, and CSS.
